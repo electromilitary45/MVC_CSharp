@@ -12,15 +12,19 @@ namespace PRACTICA.Controllers
         } 
 
         //------------- VISTA CREAR USUARIO-------------
-        public IActionResult Create()
+        public IActionResult Nuevo()
         {
             return View();
         }
 
         //------------- VISTA EDITAR USUARIO-------------
 
+        //[Route("/Usuario/Modifica/{id}")] 
         public IActionResult Modifica(int id)
         {
+            //String datos = id ;
+            //return view ("Modifica", datos);
+
             ViewData["id"] = id;
             return View();
         }
